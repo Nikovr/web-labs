@@ -2,47 +2,57 @@
 <html lang="ru">
     <head>
         <title>Моя визитная карточка</title>
-        <link href="outline.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="keywords" content="визитная, карточка">
         <meta name="description" content="Сайт-визитная карточка о студенте ИТМО">
     </head>
-    <body>
-        <header>
-            <h1>ВИЗИТНАЯ КАРТОЧКА</h1>
-            <nav>
-                <ul>
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#">Что-то еще</a></li>
-                  <li><a href="#">И еще что-то</a></li>
-                  <li><a href="#">Будет потом</a></li>
+    <body class="bg-primary">
+        <header class="header bg-secondary color-secondary">
+            <h1 class="header__name">ВИЗИТНАЯ КАРТОЧКА</h1>
+            <nav class="header__nav"">
+                <ul class="header__list">
+                  <li class="nav__elem"><a href="#">Главная</a></li>
+                  <li class="nav__elem"><a href="#">Что-то еще</a></li>
+                  <li class="nav__elem"><a href="#">И еще что-то</a></li>
+                  <li class="nav__elem"><a href="#">Будет потом</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="color-primary">
             <section>
                 <artilce>
-                    <h2>Обо мне</h2>
-                    <p>Меня зовут <strong>Коврегин Николай Сергеевич</strong></p>
-                    <p>Я учусь в <b>ИТМО</b> на <i>3 курсе</i>, факультет <b>ИТИП</b></p>
-                    <p>Персональный топ 3 любимых животных:</p>
-                    <ol>
-                        <li>Коты</li>
-                        <li>Белые медведи</li>
-                        <li>Красные панды</li>
-                    </ol>
+                    <h2 class="heading">Обо мне</h2>
+                    <div class="main bg-additional">
+                        <p>Меня зовут <strong>Коврегин Николай Сергеевич</strong></p>
+                        <p>Я учусь в <b>ИТМО</b> на <i>3 курсе</i>, факультет <b>ИТИП</b></p>
+                        <p>Персональный топ 3 любимых животных:</p>
+                        <ol>
+                            <li>Коты</li>
+                            <li>Белые медведи</li>
+                            <li>Красные панды</li>
+                        </ol>
+                    </div>
                 </artilce>
-                <aside>
-                    <h1>Интересный факт!</h1>
+                <aside class="aside bg-secondary color-secondary">
+                    <h1 class="aside__header">Интересный факт!</h1>
                     <p>На первом тестировании в университете я написал такой код:</p>
                     <code>for i in range(10000000):<br>&nbsp;&nbsp;&nbsp;&nbsp;for j in range(10000000):</code>
                 </aside>
             </section>
             <section>
-                <h1>Любимая цитата</h1>
-                <p><sup><i>“You miss 100% of the shots you don’t take"</i></sup><sub>Wayne Gretzky</sub></p>
+                <h1 class="heading">А это мой кот Чарли</h1>
+                <div class="image">
+                    <img src="cat.png"/>
+                </div>
             </section>
             <section>
+                <h1 class="heading">Любимая цитата</h1>
+                <div class="main bg-additional">
+                <p><sup><i>“You miss 100% of the shots you don’t take"</i></sup><sub>Wayne Gretzky</sub></p>
+                </div>
+            </section>
+            <!-- <section>
                 <pre>
                 _____
                 ( люблю web )
@@ -53,10 +63,10 @@
                                 ||----w |
                                 ||     ||
                 </pre>
-            </section>
+            </section> -->
         </main>
-        <footer>
-            <p>kol89320@hotmail.com +79252774140</p>
+        <footer class="footer bg-secondary color-secondary">
+            <p>kol89320@hotmail.com 88005553535</p>
         </footer>
     </body>
 </html>
