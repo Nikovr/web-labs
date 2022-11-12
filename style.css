@@ -16,7 +16,6 @@
 .nav__elem {
     display: inline;
     background-color: #4F325C;
-    border:  dotted #4F325C;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -26,6 +25,25 @@
     font-style: normal;
     font-size: 1em;
     text-shadow: 0.08em 0.08em #440060;
+}
+
+.nav__elem--active {
+    display: inline;
+    background-color: #CA96E0;
+    color: #4F325C;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0.2em;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-size: 1em;
+    text-shadow: 0.08em 0.08em #440060;
+}
+
+.nav__elem:hover {
+    border:  dotted #CA96E0;
 }
 
 .main {
