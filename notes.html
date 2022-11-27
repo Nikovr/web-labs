@@ -8,8 +8,9 @@
         <meta name="description" content="Сайт-визитная карточка о студенте ИТМО">
         <script src="scripts/onload.js"></script>
         <script src="scripts/blinking.js"></script>
+        <script src="scripts/form.js"></script>
     </head>
-    <body class="bg-primary">
+    <body onload="LoadNotes()" class="bg-primary">
         <header class="header bg-secondary color-secondary">
             <h1 class="header__name" id="header">ВИЗИТНАЯ КАРТОЧКА</h1>
             <nav class="header__nav"">
@@ -22,24 +23,22 @@
             </nav>
         </header>
         <main class="color-primary">
-            <section class="vertical">
-                <h1 class="heading">Разные фотки</h1>
-                <div class="image">
-                    <img src="photos/1.jpg"/>
+            <secition>
+                <h2 class="heading">Здесь вы можете написать заметку</h2>
+                <div class="main bg-additional">
+                    <form onsubmit="CreateNote();return false">
+                        <div class="vertical">
+                            <input type="text" id="text_id" class="textfield bg-primary">
+                            <input type="submit" class="button bg-secondary color-secondary" value="Добавить заметку">
+                        </div>
+                    </form>
                 </div>
-                <div class="image">
-                    <img src="photos/2.jpg"/>
+            </secition>
+            <section>
+                <h2 class="heading">Ваши заметки:</h2>
+                <div id="parent_notes">
+                    <div id="start_notes"></div>
                 </div>
-                <div class="image">
-                    <img src="photos/3.jpg"/>
-                </div>
-                <div class="image">
-                    <img src="photos/4.jpg"/>
-                </div>
-                <div class="image">
-                    <img src="photos/5.jpg"/>
-                </div>
-                    
             </section>
             <section class="ascii color-primary">
                 <pre>

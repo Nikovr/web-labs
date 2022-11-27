@@ -199,6 +199,31 @@
     align-items: center;
 }
 
+.textfield {
+    width: 90%;
+    height: 70%;
+    margin-bottom: 3em;
+    margin-right: 1em;
+    min-width: 15em;
+    padding: 0.5em;
+    border: medium solid #440060;
+    border-radius: 1em;
+    font-family: Georgia;
+    font-size: 1.2em;
+}
+
+.button {
+    width: 30%;
+    height: 70%;
+    margin-bottom: 3em;
+    margin-right: 1em;
+    min-width: 15em;
+    padding: 0.5em;
+    border: thick solid #440060;
+    font-family: Georgia;
+    font-size: 1.2em;
+}
+
 a {
     color: #000;
     color: inherit;
