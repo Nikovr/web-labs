@@ -8,8 +8,9 @@
         <meta name="description" content="Сайт-визитная карточка о студенте ИТМО">
         <script src="scripts/onload.js"></script>
         <script src="scripts/blinking.js"></script>
+        <script src="scripts/randompic.js"></script>
     </head>
-    <body class="bg-primary">
+    <body onload="loadPic()" class="bg-primary">
         <header class="header bg-secondary color-secondary">
             <h1 class="header__name" id="header">ВИЗИТНАЯ КАРТОЧКА</h1>
             <nav class="header__nav"">
@@ -22,6 +23,12 @@
             </nav>
         </header>
         <main class="color-primary">
+            <section class="vertical">
+                <h1 class="heading">Рандом фото</h1>
+                    <div class="image">
+                        <img id="preloader" src="photos/cat-what.gif"/>
+                    </div>
+            </section>
             <section class="vertical">
                 <h1 class="heading">Разные фотки</h1>
                 <div class="image">
